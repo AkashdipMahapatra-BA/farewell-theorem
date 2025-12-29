@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,13 +21,13 @@
     <header class="nav glass" role="banner">
       <div class="logo">
         <span class="logo__dot" aria-hidden="true"></span>
-        <span class="logo__text">E = mc^2</span>
+        <span class="logo__text">Theorem</span>
       </div>
       <nav class="nav__right" role="navigation" aria-label="Main">
-        <a class="nav__link" href="#theorem">Bayes' Theorem</a>
-        <a class="nav__link" href="#metrics">Central Limit Theorem</a>
-        <a class="nav__link" href="#notes">Gauss-Markov Theorem</a>
-        <a class="nav__link" href="#finale">Probability Distributions</a>
+        <a class="nav__link" href="#theorem">Theorem</a>
+        <a class="nav__link" href="#metrics">Metrics</a>
+        <a class="nav__link" href="#notes">Notes</a>
+        <a class="nav__link" href="#finale">Finale</a>
         <button id="toggleTheme" class="btn btn--ghost" type="button" aria-label="Toggle theme">
           <span class="btn__icon">✦</span>
         </button>
@@ -46,116 +45,187 @@
             </div>
 
             <h1 class="hero__title">
-              <span class="typewriter" data-text="Thank you — for all, What you give to the Team"></span>
+              <span class="typewriter" data-text="Thank you — for the clarity, the calm, the craft."></span>
               <span class="cursor" aria-hidden="true"></span>
             </h1>
 
             <p class="hero__subtitle">
-              You turned data into insight, noise into signal. Your impact will echo.
+              A page of gratitude for a colleague who made releases calmer, dashboards clearer,
+              and our team kinder. You turned data into insight, noise into signal. Your impact will echo.
             </p>
 
             <div class="hero__cta">
-              <button id="btnQED" class="btn btn--primary" type="button">Data Analyst @BritishAirways</button>
-              <button class="btn btn--soft" id="btnFireworks" type="button">Microsoft Certified: Power BI Data Analyst</button>
-              <button class="btn btn--ghost" id="btnSnapshot" type="button">Google IT Support Specialist</button>
-              <button class="btn btn--ghost" id="btnSnapshot" type="button">RedHat Certified System Administrator</button>
+              <button id="btnQED" class="btn btn--primary" type="button">Prove it (QED)</button>
+              <button class="btn btn--soft" id="btnFireworks" type="button">Launch Stars</button>
+              <button class="btn btn--ghost" id="btnSnapshot" type="button">Ambient Mode</button>
             </div>
 
-            <div class="mini-badges">
-              <span class="badge glass">RHCoE Ansible (Rhel 8)</span>
-              <span class="badge glass">Data</span>
-              <span class="badge glass">DevOps</span>
-              <span class="badge glass">Mathematics</span>
-            </div>
-          </div>
+            <div class="metrics__wrap">
+              <div class="metrics__left">
+                <h3 class="metrics__title">What You've Left Behind</h3>
+                <p class="metrics__lead">Metrics that matter — proof of the difference you've made for this team.</p>
 
-          <aside class="hero__poster glass" aria-labelledby="posterTitle">
-            <div class="poster__frame">
-              <img
-                class="poster__img"
-                src="public/img/1759920706814.jpg"
-                alt="Portrait"
-                loading="lazy">
-            </div>
+                <div class="overall-score" style="display:flex;gap:18px;align-items:center;margin-top:12px;">
+                  <div style="background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);min-width:120px;text-align:center;">
+                    <div style="font-size:28px;font-weight:900;color: #fff;">83<span style="font-size:14px;">%</span></div>
+                    <div style="font-size:12px;color:var(--muted);margin-top:6px;">Overall Score</div>
+                  </div>
+                  <div style="flex:1;">
+                    <div style="font-weight:700;color:rgba(255,255,255,0.94)">Summary</div>
+                    <div style="font-size:13px;color:var(--muted);margin-top:6px;">Score calculated from Systems Reliability (40%), Dashboards (20%), Incidents Prevented (20%), Team Morale (20%). Dashboards normalized to a 50-dashboard target.</div>
+                  </div>
+                </div>
 
-            <div class="poster__caption">
-            <div id="posterTitle" class="poster__name">A Farewell & Celebration</div>
-              <div class="poster__tag">"Every new beginning comes from some other beginning's end." — Seneca</div>
-            </div>
+                <div class="metrics__grid" style="margin-top:16px;">
+                  <div class="metric">
+                    <div class="metric__value">99.97<span style="font-size:12px;">%</span></div>
+                    <div class="metric__label">Systems Reliability</div>
+                  </div>
 
-            <div class="poster__chips">
-              <span class="chip">Data Analyst ↑</span>
-              <span class="chip">Freelance Writer ↑</span>
-              <span class="chip">Subject Matter Expert ↑</span>
-              <span class="chip">Technical Support ↑</span>
-            </div>
-          </aside>
-        </div>
+                  <div class="metric">
+                    <div class="metric__value">42<span style="font-size:12px;">+</span></div>
+                    <div class="metric__label">Dashboards Built</div>
+                  </div>
 
-        <div class="scroll-hint" aria-hidden="true">
-          <div class="scroll-hint__mouse"></div>
+                  <div class="metric">
+                    <div class="metric__value">31<span style="font-size:12px;">%</span></div>
+                    <div class="metric__label">Incidents Prevented</div>
+                  </div>
+
+                  <div class="metric">
+                    <div class="metric__value">100<span style="font-size:12px;">%</span></div>
+                    <div class="metric__label">Team Morale Lifted</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="metrics__right">
+                <h4 style="margin-bottom:12px">Skills & Certifications</h4>
+
+                <div class="skills__grid">
+                  <div class="skill-col">
+                    <h4>Data & Analytics</h4>
+                    <ul>
+                      <li>Python (pandas, numpy)</li>
+                      <li>SQL & Data Modeling</li>
+                      <li>Power BI / Tableau</li>
+                      <li>Statistical Analysis</li>
+                    </ul>
+                  </div>
+
+                  <div class="skill-col">
+                    <h4>Cloud & DevOps</h4>
+                    <ul>
+                      <li>IBM Cloud / AWS</li>
+                      <li>Docker & Containers</li>
+                      <li>Ansible / Automation</li>
+                      <li>CI/CD Pipelines</li>
+                    </ul>
+                  </div>
+
+                  <div class="skill-col">
+                    <h4>Software & Engineering</h4>
+                    <ul>
+                      <li>ETL / Data Engineering</li>
+                      <li>Python Scripting</li>
+                      <li>Version Control (Git)</li>
+                      <li>Unit Testing & QA</li>
+                    </ul>
+                  </div>
+
+                  <div class="skill-col">
+                    <h4>Leadership & Learning</h4>
+                    <ul>
+                      <li>Mentoring & Knowledge Sharing</li>
+                      <li>Project Management</li>
+                      <li>Technical Writing</li>
+                      <li>Cross-team Collaboration</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="certs__list">
+                  <div class="cert">
+                    <div class="cert__title">Certifications (selected)</div>
+                    <div class="cert__meta">IBM Cloud Essentials • Google Data Analytics • Microsoft Power BI • RHCSA • Ansible Basics</div>
+                  </div>
+
+                  <div class="cert">
+                    <div class="cert__title">Training & Courses</div>
+                    <div class="cert__meta">Coursera, Udemy, IBM workshops — focused on cloud, data, and automation.</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           <div class="scroll-hint__text">Scroll</div>
         </div>
       </section>
 
-      <!-- Theorem section -->
+      <!-- Projects section -->
       <section id="theorem" class="section">
         <div class="container">
           <div class="section__title reveal">
-            <h2>Your Theorem of Impact</h2>
-            <p>What you've built will outlast your time here — reliable, observable, and unforgettable.</p>
+            <h2>Projects & Contributions</h2>
+            <p>Three standout projects that showcase data-driven thinking, systems design, and real-world impact.</p>
           </div>
 
-          <div class="cards">
-            <article class="card glass reveal">
-              <div class="card__header">
-                <span class="card__kicker">Statement</span>
-                <span class="card__icon">∫</span>
+          <div class="cards projects">
+            <!-- BlooDon -->
+            <article class="project-card glass reveal">
+              <div class="project-card__image">
+                <img src="public/img/bloodon.png" alt="BlooDon - Blood Donor Platform" loading="lazy">
               </div>
-
-              <pre class="equation">Impact = ∫ (Ownership + Clarity + Reliability) dt  ≫ 0
-⇒ The team is better because you were here.</pre>
-
-              <p class="card__text">Your contributions compound over time like a stable system with clean signals. You've raised our observability, eased our releases, and inspired better collaboration every single day.</p>
-
-              <div class="card__footer">
-                <button class="btn btn--ghost copyEq" type="button" data-copy="Impact = ∫ (Ownership + Clarity + Reliability) dt  ≫ 0  ⇒ Team is better because you were here.">Copy equation</button>
-                <span class="hint">Tip: Click “QED” for a surprise.</span>
+              <div class="project-card__content">
+                <h3 class="project-card__title">BlooDon</h3>
+                <p class="project-card__date">Oct 2019 - Present</p>
+                <p class="project-card__description">A platform integrating blood donors, patients, doctors, hospitals, and blood banks. In emergencies, families find blood instantly; donors get early camp notifications. A real system solving real problems.</p>
+                <div class="project-card__tags">
+                  <span class="project-tag">Healthcare</span>
+                  <span class="project-tag">Integration</span>
+                  <span class="project-tag">Impact</span>
+                </div>
               </div>
             </article>
 
-            <article class="card glass reveal">
-              <div class="card__header">
-                <span class="card__kicker">Your Gift to Us</span>
-                <span class="card__icon">∎</span>
+            <!-- DhobiGhat -->
+            <article class="project-card glass reveal">
+              <div class="project-card__image">
+                <img src="public/img/dhobi.png" alt="DhobiGhat - Online Laundry Service" loading="lazy">
               </div>
-
-              <pre class="equation">Incidents ↓   MTTR ↓   Confidence ↑
-Observability ↑  Automation ↑  Team Calm ↑
-Result: Smoother releases, steadier on-call nights, braver teams.  QED.</pre>
-
-              <p class="card__text">The best proof is not in equations — it's in the calm confidence of your teammates knowing things are well-instrumented, well-documented, and well-built. That's your legacy.</p>
+              <div class="project-card__content">
+                <h3 class="project-card__title">DhobiGhat</h3>
+                <p class="project-card__date">Jun 2019 - Present</p>
+                <p class="project-card__description">An online laundry application connecting underprivileged local laundromats with customers. Washing, ironing, dry cleaning delivered to your doorstep—empowering local washer communities while solving convenience.</p>
+                <div class="project-card__tags">
+                  <span class="project-tag">Mobile App</span>
+                  <span class="project-tag">Community</span>
+                  <span class="project-tag">Marketplace</span>
+                </div>
+              </div>
             </article>
 
-            <article class="card glass reveal">
-              <div class="card__header">
-                <span class="card__kicker">Your Language</span>
-                <span class="card__icon">Σ</span>
+            <!-- Mutual Funds Analysis -->
+            <article class="project-card glass reveal">
+              <div class="project-card__image">
+                <img src="public/img/mutual-funds.png" alt="Mutual Funds Analysis - Data-Driven Investment Insights" loading="lazy">
               </div>
-
-              <pre class="equation small">ŷ = Xβ       (predict the future with confidence)
-H(X) = -∑ p log p     (entropy: clarity from chaos)
-P(A|B) = P(B|A)P(A) / P(B)  (belief → knowledge)
-X = UΣVᵀ       (decompose into essentials)
-∇θ L(θ) → 0     (continuously improve)</pre>
-
-              <p class="card__text">You've taught us to speak the language of data, probability, and continuous improvement. These formulas aren't just equations to you — they're the way you've shown us to build, measure, and care for systems.</p>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Mutual Funds Analysis</h3>
+                <p class="project-card__date">Jul 2020 - Aug 2020</p>
+                <p class="project-card__description">Analysis of large-cap growth across 4 major mutual fund schemes (Kotak, Canara Robeco, IDFC, Mirae Asset). Fetched API data, plotted growth analysis, calculated returns, visualized NAV with Plotly & Flourish. Data into insight.</p>
+                <div class="project-card__tags">
+                  <span class="project-tag">Data Analytics</span>
+                  <span class="project-tag">Finance</span>
+                  <span class="project-tag">Visualization</span>
+                </div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Metrics -->
+      <!-- Metrics + Skills -->
       <section id="metrics" class="section section--dense">
         <div class="container">
           <div class="section__title reveal">
@@ -188,11 +258,112 @@ X = UΣVᵀ       (decompose into essentials)
               <div class="metric__bar"><span style="--w: 100%"></span></div>
             </div>
           </div>
+
+          <div class="skills-and-certs" style="margin-top:20px; display:grid; gap:18px;">
+            <div class="skills glass reveal">
+              <div class="section__title">
+                <h3>Skills (grouped)</h3>
+                <p class="muted">Organized into four practical categories derived from professional work and certifications.</p>
+              </div>
+
+              <div class="skills__grid">
+                <div class="skill-col">
+                  <h4>Data & Analytics</h4>
+                  <ul>
+                    <li>Microsoft Power BI</li>
+                    <li>Data Analytics</li>
+                    <li>Data Visualization (Plotly, Flourish)</li>
+                    <li>Advanced SQL</li>
+                    <li>Statistical analysis</li>
+                  </ul>
+                </div>
+
+                <div class="skill-col">
+                  <h4>DevOps & Infrastructure</h4>
+                  <ul>
+                    <li>Ansible / Automation</li>
+                    <li>Red Hat Linux (RHCSA)</li>
+                    <li>AWS fundamentals</li>
+                    <li>Google Cloud Platform (Core)</li>
+                    <li>Observability & Monitoring</li>
+                  </ul>
+                </div>
+
+                <div class="skill-col">
+                  <h4>Programming & Tools</h4>
+                  <ul>
+                    <li>Python (automation, data)</li>
+                    <li>SQL / MySQL</li>
+                    <li>Git / Version control</li>
+                    <li>PowerShell / Bash</li>
+                    <li>Plotly, Pandas, NumPy</li>
+                  </ul>
+                </div>
+
+                <div class="skill-col">
+                  <h4>Support & Soft Skills</h4>
+                  <ul>
+                    <li>Technical Support & IT Ops</li>
+                    <li>Documentation & Runbooks</li>
+                    <li>Mentorship & Knowledge Sharing</li>
+                    <li>Collaborative problem solving</li>
+                    <li>Incidents & Postmortems</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="certs glass reveal">
+              <div class="section__title">
+                <h3>Selected Licenses & Certifications</h3>
+                <p class="muted">Key certifications that demonstrate the technical breadth supporting these contributions.</p>
+              </div>
+
+              <div class="certs__list">
+                <div class="cert">
+                  <div class="cert__title">Microsoft Certified: Power BI Data Analyst Associate</div>
+                  <div class="cert__meta">Microsoft — Issued Sep 2024 · Expired Sep 2025</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">Red Hat Certified System Administrator (RHCSA)</div>
+                  <div class="cert__meta">Red Hat — Issued Jun 2019</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">Red Hat Certified Specialist in Ansible Automation</div>
+                  <div class="cert__meta">Red Hat — Issued Jul 2019</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">Google IT Support Professional Certificate</div>
+                  <div class="cert__meta">Google / Coursera — Issued Jun 2020</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">AWS Fundamentals</div>
+                  <div class="cert__meta">Amazon Web Services — Issued May 2020</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">Cloud Core (IBM)</div>
+                  <div class="cert__meta">IBM — Issued Jun 2021</div>
+                </div>
+
+                <div class="cert">
+                  <div class="cert__title">5 STAR Certificate of Eminence in Data Science</div>
+                  <div class="cert__meta">CipherSchools — Issued Aug 2020</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <!-- Notes wall -->
-      <section id="notes" class="section">
+      <!-- <section id="notes" class="section">
         <div class="container">
           <div class="section__title reveal">
             <h2>Memories & Gratitude</h2>
@@ -208,9 +379,10 @@ X = UΣVᵀ       (decompose into essentials)
             <div class="notes__stream" id="noteStream" aria-live="polite"></div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Finale -->
+      <!-- Finale (commented out for future modifications) -->
+      <!--
       <section id="finale" class="section">
         <div class="container">
           <div class="finale glass reveal">
@@ -232,6 +404,21 @@ X = UΣVᵀ       (decompose into essentials)
             </div>
 
             <p class="footer-note">Built with ❤️ and gratitude. Thank you for everything — the team will never be the same without you.</p>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!-- Compact footer with LinkedIn and CV download -->
+      <section id="farewell-footer" class="section">
+        <div class="container">
+          <div class="farewell-footer glass reveal" style="display:flex;flex-direction:column;align-items:center;gap:14px;padding:18px;">
+            <div class="footer-actions">
+              <a class="glass-btn" href="https://www.linkedin.com/in/apoorva-panwar" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+              <a class="glass-btn" href="public/CV.pdf" download>Download CV</a>
+            </div>
+
+            <p class="footer-note">A good 'why not' — from our team.</p>
           </div>
         </div>
       </section>
