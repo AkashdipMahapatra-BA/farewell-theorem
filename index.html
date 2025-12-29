@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farewell | Theorem of Impact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div id="equation-layer" aria-hidden="true"></div>
+
+    <!-- Ambient gradient blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <!-- Top nav -->
+    <header class="nav glass" role="banner">
+      <div class="logo">
+        <span class="logo__dot" aria-hidden="true"></span>
+        <span class="logo__text">E = mc^2</span>
+      </div>
+      <nav class="nav__right" role="navigation" aria-label="Main">
+        <a class="nav__link" href="#theorem">Bayes' Theorem</a>
+        <a class="nav__link" href="#metrics">Central Limit Theorem</a>
+        <a class="nav__link" href="#notes">Gauss-Markov Theorem</a>
+        <a class="nav__link" href="#finale">Probability Distributions</a>
+        <button id="toggleTheme" class="btn btn--ghost" type="button" aria-label="Toggle theme">
+          <span class="btn__icon">✦</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="pill glass">
+              <span class="pill__spark">✶</span>
+              <span>DevOps × Data Analytics • Thank You & Farewell</span>
+            </div>
+
+            <h1 class="hero__title">
+              <span class="typewriter" data-text="Thank you — for all, What you give to the Team"></span>
+              <span class="cursor" aria-hidden="true"></span>
+            </h1>
+
+            <p class="hero__subtitle">
+              You turned data into insight, noise into signal. Your impact will echo.
+            </p>
+
+            <div class="hero__cta">
+              <button id="btnQED" class="btn btn--primary" type="button">Data Analyst @BritishAirways</button>
+              <button class="btn btn--soft" id="btnFireworks" type="button">Microsoft Certified: Power BI Data Analyst</button>
+              <button class="btn btn--ghost" id="btnSnapshot" type="button">Google IT Support Specialist</button>
+              <button class="btn btn--ghost" id="btnSnapshot" type="button">RedHat Certified System Administrator</button>
+            </div>
+
+            <div class="mini-badges">
+              <span class="badge glass">RHCoE Ansible (Rhel 8)</span>
+              <span class="badge glass">Data</span>
+              <span class="badge glass">DevOps</span>
+              <span class="badge glass">Mathematics</span>
+            </div>
+          </div>
+
+          <aside class="hero__poster glass" aria-labelledby="posterTitle">
+            <div class="poster__frame">
+              <img
+                class="poster__img"
+                src="public/img/1759920706814.jpg"
+                alt="Portrait"
+                loading="lazy">
+            </div>
+
+            <div class="poster__caption">
+            <div id="posterTitle" class="poster__name">A Farewell & Celebration</div>
+              <div class="poster__tag">"Every new beginning comes from some other beginning's end." — Seneca</div>
+            </div>
+
+            <div class="poster__chips">
+              <span class="chip">Data Analyst ↑</span>
+              <span class="chip">Freelance Writer ↑</span>
+              <span class="chip">Subject Matter Expert ↑</span>
+              <span class="chip">Technical Support ↑</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-hint__mouse"></div>
+          <div class="scroll-hint__text">Scroll</div>
+        </div>
+      </section>
+
+      <!-- Theorem section -->
+      <section id="theorem" class="section">
+        <div class="container">
+          <div class="section__title reveal">
+            <h2>Your Theorem of Impact</h2>
+            <p>What you've built will outlast your time here — reliable, observable, and unforgettable.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card glass reveal">
+              <div class="card__header">
+                <span class="card__kicker">Statement</span>
+                <span class="card__icon">∫</span>
+              </div>
+
+              <pre class="equation">Impact = ∫ (Ownership + Clarity + Reliability) dt  ≫ 0
+⇒ The team is better because you were here.</pre>
+
+              <p class="card__text">Your contributions compound over time like a stable system with clean signals. You've raised our observability, eased our releases, and inspired better collaboration every single day.</p>
+
+              <div class="card__footer">
+                <button class="btn btn--ghost copyEq" type="button" data-copy="Impact = ∫ (Ownership + Clarity + Reliability) dt  ≫ 0  ⇒ Team is better because you were here.">Copy equation</button>
+                <span class="hint">Tip: Click “QED” for a surprise.</span>
+              </div>
+            </article>
+
+            <article class="card glass reveal">
+              <div class="card__header">
+                <span class="card__kicker">Your Gift to Us</span>
+                <span class="card__icon">∎</span>
+              </div>
+
+              <pre class="equation">Incidents ↓   MTTR ↓   Confidence ↑
+Observability ↑  Automation ↑  Team Calm ↑
+Result: Smoother releases, steadier on-call nights, braver teams.  QED.</pre>
+
+              <p class="card__text">The best proof is not in equations — it's in the calm confidence of your teammates knowing things are well-instrumented, well-documented, and well-built. That's your legacy.</p>
+            </article>
+
+            <article class="card glass reveal">
+              <div class="card__header">
+                <span class="card__kicker">Your Language</span>
+                <span class="card__icon">Σ</span>
+              </div>
+
+              <pre class="equation small">ŷ = Xβ       (predict the future with confidence)
+H(X) = -∑ p log p     (entropy: clarity from chaos)
+P(A|B) = P(B|A)P(A) / P(B)  (belief → knowledge)
+X = UΣVᵀ       (decompose into essentials)
+∇θ L(θ) → 0     (continuously improve)</pre>
+
+              <p class="card__text">You've taught us to speak the language of data, probability, and continuous improvement. These formulas aren't just equations to you — they're the way you've shown us to build, measure, and care for systems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics -->
+      <section id="metrics" class="section section--dense">
+        <div class="container">
+          <div class="section__title reveal">
+            <h2>What You've Left Behind</h2>
+            <p>Metrics that matter — proof of the difference you've made for this team.</p>
+          </div>
+
+          <div class="metrics glass reveal">
+            <div class="metric">
+              <div class="metric__label">Systems Reliability</div>
+              <div class="metric__value"><span class="counter" data-target="99.97">0</span><span class="metric__suffix">%</span></div>
+              <div class="metric__bar"><span style="--w: 99.97%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric__label">Dashboards Built</div>
+              <div class="metric__value"><span class="counter" data-target="42">0</span><span class="metric__suffix">+</span></div>
+              <div class="metric__bar"><span style="--w: 88%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric__label">Incidents Prevented</div>
+              <div class="metric__value"><span class="counter" data-target="31">0</span><span class="metric__suffix">%</span></div>
+              <div class="metric__bar"><span style="--w: 67%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric__label">Team Morale Lifted</div>
+              <div class="metric__value"><span class="counter" data-target="100">0</span><span class="metric__suffix">%</span></div>
+              <div class="metric__bar"><span style="--w: 100%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notes wall -->
+      <section id="notes" class="section">
+        <div class="container">
+          <div class="section__title reveal">
+            <h2>Memories & Gratitude</h2>
+            <p>Leave a message — it will float into the stars like a constellation of thanks. We'll carry your memory forward.</p>
+          </div>
+
+          <div class="notes glass reveal">
+            <form id="noteForm" class="notes__form">
+              <input id="noteInput" class="input" type="text" maxlength="120" placeholder="Share a memory or thank you (e.g., 'You made me believe in data.' or 'On-call nights were calmer because of you.')" />
+              <button class="btn btn--primary" type="submit">Send</button>
+            </form>
+
+            <div class="notes__stream" id="noteStream" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finale -->
+      <section id="finale" class="section">
+        <div class="container">
+          <div class="finale glass reveal">
+            <h2 class="finale__title">Your Legacy Lives On</h2>
+            <p class="finale__text">Some colleagues you work with for years and forget. Others leave an imprint so deep it becomes part of the team's DNA. You're the latter.</p>
+
+            <div class="finale__equation">
+              <span class="mono">Your Legacy</span>
+              <span class="mono">=</span>
+              <span class="mono">lim</span>
+              <span class="mono">_{t→∞}</span>
+              <span class="mono">(Data Integrity + Kind Mentorship + Reliable Systems)</span>
+              <span class="mono">∞</span>
+            </div>
+
+            <div class="finale__buttons">
+              <button id="btnFireworks" class="btn btn--soft" type="button">Launch Stars</button>
+              <button id="btnSnapshot" class="btn btn--ghost" type="button">Ambient Mode</button>
+            </div>
+
+            <p class="footer-note">Built with ❤️ and gratitude. Thank you for everything — the team will never be the same without you.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Toast -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
