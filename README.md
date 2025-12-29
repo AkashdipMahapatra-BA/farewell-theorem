@@ -9,3 +9,9 @@
 ```py
 put cv in /public
 ```
+
+</br>
+</br>
+
+<h4 align="right">last update: 29/12/2025 17:31 GMT</h4>
+<h5 align="right">E = mc^2</h5>
